@@ -16,7 +16,9 @@ let opts = {
 	"res": 4,
 	"screenRatio": 0,
 	"rainbow": false,
-	"frozen": false
+	"frozen": false,
+	"repelStrength":50,
+	"repel":false
 };
 
 function livelyPropertyListener(name, val) {
