@@ -67,7 +67,7 @@
     "tick": 1,
     "step": 5,
     "value": 50
-  }
+  },
 	"repel": {
     "type": "checkbox",
     "value": false,
