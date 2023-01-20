@@ -16,7 +16,9 @@ let opts = {
 	"res": 4,
 	"screenRatio": 0,
 	"rainbow": false,
-	"frozen": false
+	"frozen": false,
+	"repelStrength":50,
+	"repel":false
 };
 
 function livelyPropertyListener(name, val) {
@@ -51,6 +53,12 @@ function livelyPropertyListener(name, val) {
 		break;
 		case "frozen":
 			starfield.opts.frozen = val;
+		break;
+		case "repel":
+			starfield.opts.repel = val;
+		break;
+		case "repelStrenght":
+			starfield.opts.repelStrength = val;
 		break;
 		case "refresh":
 			location.reload();

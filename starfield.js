@@ -33,7 +33,8 @@ function Star() {
 		
 		this.draw();
 		this.move();
-		
+		if(starfield.opts.repel)
+			this.repel();
 		this.age++;
 		if(this.age > starfield.opts.maxAge) this.spawn();
 	}
@@ -58,6 +59,20 @@ function Star() {
 		
 		if(this.oob == 0) {
 			this.spawn();
+		}
+	}
+	
+	Star.prototype.repel = function () {
+		let X = this.pos.x - mouseX;
+		let Y = this.pos.y - mouseY;
+
+		let dist = sqrt(pow(X, 2) + pow(Y, 2));
+
+		let r = starfield.opts.repelStrength;
+		if (dist < r) {
+			let f = lerp(0.5, 0, dist / r);
+			this.pos.x += X * f;
+			this.pos.y += Y * f;
 		}
 	}
 	
