@@ -54,6 +54,12 @@ function livelyPropertyListener(name, val) {
 		case "frozen":
 			starfield.opts.frozen = val;
 		break;
+		case "repel":
+			starfield.opts.repel = val;
+		break;
+		case "repelStrenght":
+			starfield.opts.repelStrength = val;
+		break;
 		case "refresh":
 			location.reload();
 		break;
