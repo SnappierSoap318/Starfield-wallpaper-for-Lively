@@ -59,6 +59,20 @@
     "value": false,
     "text": "Freeze noise field"
   },
+	"repelStrength": {
+    "type": "slider",
+    "text": "Repulsion strenght",
+    "min": 25,
+    "max": 250,
+    "tick": 1,
+    "step": 5,
+    "value": 50
+  }
+	"repel": {
+    "type": "checkbox",
+    "value": false,
+    "text": "Mouse repulsion"
+  },
 	"showfr": {
     "type": "checkbox",
     "value": false,
